@@ -6,16 +6,7 @@ import CustomSolidComponentNotTR from '../components/CustomSolidComponentNotTR'
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<table>
-			<thead>
-				<tr>
-					<td>Testing Table</td>
-				</tr>
-			</thead>
-			<tbody>
-				<CustomSolidComponentTR client:load />
-			</tbody>
-		</table>
-		<a href="/other">See the working component</a>
+		<CustomSolidComponentNotTR client:load />
+		<a href="/">See the broken component</a>
 	</main>
 </Layout>
