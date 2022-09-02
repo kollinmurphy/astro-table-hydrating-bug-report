@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CustomSolidComponentTR from '../components/CustomSolidComponentTR'
+import CustomSolidComponentNotTR from '../components/CustomSolidComponentNotTR'
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<table>
+			<thead>
+				<tr>
+					<td>Testing Table</td>
+				</tr>
+			</thead>
+			<tbody>
+				<CustomSolidComponentTR client:load />
+			</tbody>
+		</table>
+		<CustomSolidComponentNotTR client:load />
+	</main>
+</Layout>
