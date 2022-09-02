@@ -2,7 +2,7 @@
 
 import { createEffect } from 'solid-js'
 
-const CustomSolidComponentTR = () => {
+const TableRow = () => {
   createEffect(() => {
     alert("I'm not hydrated")
   })
@@ -14,4 +14,4 @@ const CustomSolidComponentTR = () => {
   )
 }
 
-export default CustomSolidComponentTR
+export default TableRow

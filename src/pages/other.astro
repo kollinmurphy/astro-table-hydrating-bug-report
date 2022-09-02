@@ -1,12 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import CustomSolidComponentTR from '../components/CustomSolidComponentTR'
-import CustomSolidComponentNotTR from '../components/CustomSolidComponentNotTR'
+import Div from '../components/Div'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<CustomSolidComponentNotTR client:load />
-		<a href="/">See the broken component</a>
+		<Div client:load />
+		<a href="/">See the broken components</a>
 	</main>
 </Layout>

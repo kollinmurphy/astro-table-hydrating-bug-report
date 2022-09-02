@@ -2,7 +2,7 @@
 
 import { createEffect } from 'solid-js'
 
-const CustomSolidComponentNotTR = () => {
+const Div = () => {
   createEffect(() => {
     alert("I'm hydrated")
   })
@@ -10,4 +10,4 @@ const CustomSolidComponentNotTR = () => {
   return <div>I render and hydrate.</div>
 }
 
-export default CustomSolidComponentNotTR
+export default Div

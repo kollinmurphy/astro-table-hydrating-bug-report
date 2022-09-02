@@ -1,20 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import CustomSolidComponentTR from '../components/CustomSolidComponentTR'
-import CustomSolidComponentNotTR from '../components/CustomSolidComponentNotTR'
+import Table from '../components/Table'
+import TableRow from '../components/TableRow'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<Table client:load />
 		<table>
-			<thead>
-				<tr>
-					<td>Testing Table</td>
-				</tr>
-			</thead>
-			<tbody>
-				<CustomSolidComponentTR client:load />
-			</tbody>
+			<TableRow client:load />
 		</table>
 		<a href="/other">See the working component</a>
 	</main>
